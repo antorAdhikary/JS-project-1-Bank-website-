@@ -17,15 +17,90 @@
   <link rel="stylesheet" href="css/style.css">
 
   <!-- Fav-icon Title -->
-  <link rel="shortcut icon" href="" type="image/x-icon">
-  <title></title>
+  <link rel="shortcut icon" href="img/skill.png" type="image/x-icon">
+  <title>Family Bank</title>
 </head>
 <body>
+  <section id="front-page">
+    <!-- HEADLINE -->
+    <h1 class="text-center mt-5 p-5">Welcome to Family Bank</h1>
+
+    <!-- FORM FILL-UP -->
+    <div class="container box-shadow p-4">
+      <h3 class="mb-3">Login</h3>
+      <div class="form-group ">
+          <div class="row">
+            <div class="col-12">
+              <input class="form-control" type="email" name="email" id="emial" placeholder="Email">
+              <small id="emailHelp" class="form-text text-muted mb-4">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="col-12">
+              <input class="form-control mb-3" type="password" name="password" id="password" placeholder="Password">
+            </div>
+            <div class="col-12">
+              <button id="submit-btn" type="submit" class="btn btn-success px-3">Enter</button>
+            </div>
+          </div>
+      </div>
+
+    </div>
+  </section>
+  <section id="second-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 ">
+          <div class="bg-secondary p-4 border-radies text-light">
+            <h4>Deposit</h4>
+            <h2>$ <span id="current-deposit">00</span></h2>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="bg-warning p-4 border-radies text-light">
+            <h4>Withdraw</h4>
+            <h2>$ <span id="current-withdraw">00</span></h2>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class=" bg-info p-4 border-radies text-light">
+            <h4>Balance</h4>
+            <h2>$ <span id="my-balance">1000</span></h2>
+          </div>
+        </div>
+      </div>
+      
+      <div id="deposit-withdraw">
+        <div class="row">
+          <div class="col-md-6">
+            <div class=" p-4 box-shadow">
+              <h3>Deposit</h3>
+              <input id="deposit-num" class="form-control" type="number" placeholder="$ amount you want to deposit">
+              <br>
+              <button id="deposit-btn" class="btn btn-success"> Deposit </button>
+              
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class=" p-4 box-shadow">
+            <h3>Withdraw</h3>
+            <input id="withdraw-amount" class="form-control" type="number" placeholder="$ amount you want to withdraw">
+            <br>
+            <button id="withdraw-btn" class="btn btn-success"> Withdraw </button>
+        </div>
+      </div>
+
+    </div>
+      </div>
+      
+    </div>
+  </section>
+
+
 
   <!-- JS SCRIPT -->
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/navbar-fixed.js"></script>
+  <script src="js/custom.js"></script>
 </body>
 </html>
